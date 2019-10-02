@@ -1,11 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types'
+import ArticleListItem from './ArticleListItem'
 
 const ArticleList = props => {
   return (
     <ul>
       {props.articles.map(article => (
-        <li key={article.slug}>ArticleListItem component goes here</li>
+        <li>
+          <h2>{article.title}</h2>
+          <p>{article.shortText}</p>
+          <ArticleListItem article={article}/>
+        </li>
       ))}
     </ul>
   );

@@ -1,5 +1,9 @@
 body{
-    background-color: darkgray
+    background-color: darkgray;
+    border-style: dashed;
+    border-width: 0.1px;
+    border-color: dimgray;
+    
 }
 
 li {

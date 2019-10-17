@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import ArticleListItem from './ArticleListItem'
+import ArticleImage from './ArticleImage'
 import styles from './ArticleList.module.css'
 
 const ArticleList = props => {
@@ -9,17 +10,20 @@ const ArticleList = props => {
     <head>
      
       </head>
+      
     <body className={styles.body}>
     <ul>
       {props.articles.map(article => (
         <li className={styles.li}>
-          <h2 className={styles.h2}>{article.title}</h2>
+          <div><h2 className={styles.h2}>{article.title}</h2>
           <p className={styles.p}>{article.shortText}</p>
-          <ArticleListItem article={article}/>
+          <ArticleListItem article={article}/></div>
+          <div><ArticleImage article={article}/></div>
         </li>
       ))}
     </ul>
     </body>
+   
    </html>
 
   );

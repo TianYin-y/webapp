@@ -2,5 +2,9 @@ button{
     background-color: rgb(218,0,0);
     color: white;
     border-width: 1px;
-    float:right;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
 }

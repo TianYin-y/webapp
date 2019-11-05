@@ -1,10 +1,14 @@
 img{
-width: 170px;
-height: 110px;
-border-radius: 50%;
-border: 10px solid;
-border-color: rgb(218,0,0);
-box-shadow:0px 10px 10px rgb(87, 85, 85);
-margin-block-start: -100%;
-margin-left: -220px;
+    height: 100px;
+    width: 180px;
+    float: left;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #cc0000;
+    border-width: 8px;
+    margin-right: 1em;
+    margin-bottom: 30px;
+    box-shadow: 0px 6px 6px 0px #888888;
+    display:table-cell; 
+    vertical-align:bottom;
 }

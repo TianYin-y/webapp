@@ -1,4 +1,3 @@
-  
 .body {
     list-style: none;
     background: #999999;
@@ -13,4 +12,25 @@
 
 .list {
     display: flex;
+}
+
+@media (min-width: 400px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

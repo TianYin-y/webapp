@@ -10,16 +10,14 @@ const Item = props => {
             <ArticleImage info={props.article}></ArticleImage>
             <div className={styles.textArea}>
                 <h1 className={styles.header3}> {props.article.title}</h1>
-                <p>{props.article.shortText}</p>
+                <p className={styles.shortText}>{props.article.shortText}</p>
                 <time className={styles.time} dateTime={props.article.pubDate}>
                     {props.article.pubDate}
                 </time><br />
-                <div className={styles.buttonArea}>
                 <SlugButton info={props.article}>
                     show article slug
                 </SlugButton>
             </div>
-        </div>
         </div>
     );
 };
